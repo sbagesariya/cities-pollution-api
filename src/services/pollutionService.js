@@ -54,9 +54,8 @@ class PollutionService {
       }
 
       logger.info(`Fetched ${response.data.results.length} pollution entries`);
-      //console.log('response=========', response.data)
 
-      return response.data.results;
+      return response.data;
 
     } catch (error) {
       logger.error('Failed to fetch pollution data:', error.message);

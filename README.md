@@ -2,6 +2,11 @@
 
 A production-ready Node.js backend service that integrates with external APIs to provide pollution data for cities worldwide. The service fetches data from a pollution API, normalizes and validates it, enriches it with Wikipedia descriptions, and returns paginated results.
 
+## Screenshots
+
+Here’s a preview of the application on the current platform:
+![Postman Screenshot](https://github.com/sbagesariya/cities-pollution-api/blob/main/Postman_Screenshot from 2025-08-15 23-38-58.png)
+
 ## Features
 
 - **Data Integration**: Fetches pollution data from external API with authentication

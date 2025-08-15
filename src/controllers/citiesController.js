@@ -24,9 +24,9 @@ const getCitiesPollution = async (req, res) => {
 
     // Fetch raw pollution data
     const rawPollutionData = await pollutionService.fetchPollutionData(page, limit, req.query.country);
-
+    console.log(rawPollutionData)
     // Normalize and validate the data
-    const validCities = dataValidator.filterValidCities(rawPollutionData);
+    const validCities = dataValidator.filterValidCities(rawPollutionData.results);
     logger.info(`Filtered to ${validCities.length} valid cities`);
 
     // Sort by pollution level (highest first)
@@ -59,7 +59,7 @@ const getCitiesPollution = async (req, res) => {
     const response = {
       page,
       limit,
-      total: validCities.length,
+      total: rawPollutionData.meta.totalPages,
       cities: enrichedCities
     };
 
