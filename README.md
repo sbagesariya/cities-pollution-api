@@ -5,7 +5,7 @@ A production-ready Node.js backend service that integrates with external APIs to
 ## Screenshots
 
 Here’s a preview of the application on the current platform:
-![Postman Screenshot](https://github.com/sbagesariya/cities-pollution-api/blob/main/Postman_Screenshot from 2025-08-15 23-38-58.png)
+![Postman Screenshot](https://github.com/sbagesariya/cities-pollution-api/blob/main/Postman_Screenshot%20from%202025-08-15%2023-38-58.png)
 
 ## Features
 
